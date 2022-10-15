@@ -5,14 +5,14 @@ let fruits = ['apple', 'orange', 'banana', 'kiwi', 'strowberry', 'peach', 'blueb
 
 if(userAge <= 18){
     let cookingSkill = confirm("Can you cook?");
-    if (cookingSkill == true){
+    if(cookingSkill == true){
         alert("Your name is  " + userName + "  Your age is  " + userAge + "  You can cook!" + " "  + "Congrats!:)");
     }else{
         alert("Your name is  " + userName + "  Your age is  " + userAge + " " +  "You cant cook!;(" + " "  + "Dont worry");
     }
 }else {
     let employmentStatus = confirm("Are you working??");
-    if (employmentStatus  == true){
+    if(employmentStatus  == true){
         let retirement = 60 - userAge;
         if(retirement <= 0){
             alert(userName + "  you already on retirement.");
