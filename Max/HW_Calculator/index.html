@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>
+        Project
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"> </script>
+</head>
+
+<body>
+    <h1> Calculator </h1>
+    <input oninput="enableButton()" id="numberFirst" placeholder="enter number here" type="number" />
+    <select id="selectInput">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+    </select>
+    <input oninput="enableButton()" id="numberSecond" placeholder="enter number here" type="number" />
+    <select id="sign">
+        <option>=</option>
+    </select>
+    <output class="s" id="resultDiv" placeholder="result"> Result</output>
+    <button disabled id="calculateBtn" onclick="calculate()"> CALC </button>
+    <br>
+    <button id="cleanBtn" onclick="cleanResult()"> clean </button>
+    <button id="memoryBtn" onclick="saveResult()"> memo </button>
+
+</body>
+
+</html>
